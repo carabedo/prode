@@ -3583,11 +3583,6 @@ div=document.getElementsByClassName('partidos-container')[0]
 div.append(nuevo_div)
 
 
-function sendProde(){
-
-    console.log(preds)
-
-}
 
 btnGuardar.addEventListener('click', sendProde)
 
@@ -3643,5 +3638,52 @@ function renderPred(g){
 
 }
 
+
+function sendProde(){
+    if (checkPreds(preds)) {
+    id=prompt('mail?')
+    postAPI(preds,id)
+    }
+    else {
+    console.log('')
+    }
+}
+
+
+
+function checkPreds(preds){
+    flatpreds=preds.flat().flat()
+    flatpreds.filter(item => item !='')
+    if (flatpreds.filter(item => item !='').length != flatpreds.length) {
+        alert('faltan partidos')
+        return false
+    } else {
+        return true
+    }
+}
+
+
+function postAPI(preds,id){
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    var raw = JSON.stringify({
+        id: id ,
+        preds : preds.flat().flat()
+    });
+    
+    var requestOptions = {
+      mode: 'no-cors',
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("https://nqsv0uq9y2.execute-api.us-east-1.amazonaws.com/default/postProde", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
 ;
 
