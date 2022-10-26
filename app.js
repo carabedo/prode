@@ -3515,7 +3515,7 @@
     f8a0: function(e, t, a) {}
 });
 
-
+/// mi codigo
 
 parsetime = function(e) {
     var t = {
@@ -3584,16 +3584,64 @@ div.append(nuevo_div)
 
 
 function sendProde(){
-    inputs=document.getElementsByTagName('input')
-    for (let input of inputs) {
-        console.log(input.value)
-    }
+
+    console.log(preds)
+
 }
 
 btnGuardar.addEventListener('click', sendProde)
 
+function zeros(dimensions) {
+    var array = [];
+
+    for (var i = 0; i < dimensions[0]; ++i) {
+        array.push(dimensions.length == 1 ? ['',''] : zeros(dimensions.slice(1)));
+    }
+
+    return array;
+}
+
+preds=zeros([8,6])
+
+inputs=document.getElementsByTagName('input')
 
 
+
+for (let i = 0; i < inputs.length; i++) {
+    input=inputs[i]
+    input.addEventListener('input',() => guardaPred(i))
+}
+
+function guardaPred(i){
+    g=grupo_activo
+    //console.log(i,inputs[i].value)
+    m=Math.ceil(Math.round((i+1)/2)-1)
+    n=i%2
+    //console.log(m,n)
+    preds[g][m][n]=inputs[i].value
+
+}
+
+let grupo_activo
+grupo_activo=0
+
+gruposlis=document.getElementById('menu-grupos').getElementsByTagName('li')
+
+for (let i = 0; i < gruposlis.length; i++) {
+    grupo=gruposlis[i]
+    grupo.addEventListener('click',() => renderPred(i))
+}
+
+function renderPred(g){
+    grupo_activo=g
+    for (let i = 0; i < inputs.length; i++) {
+        input=inputs[i]
+        m=Math.ceil(Math.round((i+1)/2)-1)
+        n=i%2
+        input.value=preds[g][m][n]
+    }    
+
+}
 
 ;
-//# sourceMappingURL=app~d0ae3f07.e5b3f71a.js.map
+
