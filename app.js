@@ -429,72 +429,7 @@
             var e = this
               , t = e.$createElement
               , a = e._self._c || t;
-            return a("div", {
-                staticClass: "terminos",
-                attrs: {
-                    id: "terminos"
-                }
-            }, [a("div", {
-                staticClass: "btns"
-            }, [a("button", {
-                class: {
-                    open: e.open
-                },
-                on: {
-                    click: function(t) {
-                        return e.openBox()
-                    }
-                }
-            }, [e._v("TÉRMINOS Y CONDICIONES")]), a("a", {
-                staticClass: "contacto",
-                class: {
-                    open: e.open
-                },
-                attrs: {
-                    href: "https://carabedo.github.io/prode/",
-                    target: "_blank"
-                }
-            }, [e._v("CONTACTO")])]), e.open ? a("div", {
-                staticClass: "cerrar",
-                on: {
-                    click: function(t) {
-                        return e.openBox()
-                    }
-                }
-            }) : e._e(), a("div", {
-                staticClass: "dialogo-legales",
-                class: {
-                    open: e.open
-                }
-            }, [a("p", {
-                staticClass: "reglas-titulo"
-            }, [e._v("Bases y Condiciones “Pronóstico del Mundial”")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v('Resumen del Juego: Se trata de un juego diseñado por Sociedad Anónima La Nación (en adelante, el "Organizador" o “La Nación”), que permite pronosticar resultados de la Copa del Mundo, Qatar 2022 (en adelante, el “Mundial”), con un sistema propio de puntuación. Para participar, el usuario deberá registrarse en www.lanacion.com.ar y así accederá al interactivo sobre el pronóstico deportivo del Mundial. Cada participante deberá hacer un pronóstico respetando el reglamento citado en las presentes bases y condiciones (en adelante, las “Bases”) y además podrá formar grupos con sus contactos para competir entre sí. De esta manera, se generará un ranking general conformado por todos los participantes que pronostiquen y otro ranking por cada grupo creado al que podrán acceder solo aquellos que lo integran. Los participantes podrán formar la cantidad de grupos que quieran. ')]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("1")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("2")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("3")]), e._m(0), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("Se deja constancia de que, en relación al cumplimiento de la Ley de Protección de Datos Personales (Ley N° 25.326), los datos personales que sean requeridos a los Participantes serán utilizados por el Organizador para los siguientes fines: a) identificación y autenticación, b) administración y gestión comercial, c) mejora del servicio, d) fines estadísticos, e) envío de notificaciones, promociones o publicidad, entre otros de S.A. La Nación, sus sociedades controladas y/o vinculadas (Publirevistas S.A., El Jardín en la Argentina S.A., Libropolis S.A., Buenos Aires Arena S.A.) y sus anunciantes. Los datos personales no serán difundidos ni empleados para un fin distinto o incompatible al tenido en cuenta al ser ingresados en la base. S.A. La Nación podrá emplear a otras compañías y/o personas físicas para llevar a cabo tareas o funciones en su nombre. Entre los ejemplos de ese tipo podemos mencionar el de enviar correo postal y electrónico, retirar información reiterativa de las listas de usuarios, analizar datos en forma estadística, etc. Dichas personas cuentan con acceso a la información personal necesaria para cumplir con sus tareas y funciones, pero no pueden utilizarla con fines distintos a los estipulados. Las bases de datos de S.A. La Nación se encuentran registradas en la Dirección Nacional de Protección de Datos Personales del Ministerio de Justicia y Derechos Humanos de la Presidencia de la Nación (República Argentina), en cumplimiento de lo dispuesto en el art. 3 de la Ley 25.326. El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a 6 meses, salvo que se acredite un interés legítimo al efecto, conforme lo establecido en el art. 14, inc. 3 de la Ley 25.326. La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de Control de la Ley 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales. ")]), e._m(1), e._m(2), e._m(3), e._m(4), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("8.- Promoción válida sin obligación de compra. Podrán participar del Juego todas aquellas personas que sean mayores de 18 años, y que cumplan con la modalidad de participación referida en las presentes Bases, la cual no requiere ningún tipo de erogación, compra y/o gasto por parte de los Participantes.")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("9.- Notificación al Ganador: El Potencial Ganador del Premio del Juego será notificado por el Organizador a través de correo electrónico y luego de que responda otorgando un número de teléfono, el Organizador lo llamará a dicho número para que el Potencial Ganador conteste una pregunta de cultura general de mundiales. En caso de que el Organizador no pueda contactar al Potencial Ganador al número telefónico provisto, o que no contestare la pregunta de cultura general de mundiales de manera correcta, éste perderá automáticamente la posibilidad de acceder al Premio respectivo y el Premio quedará a favor del Organizador.")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("10.- Entrega del Premio: Una vez entregado el Premio al Ganador, el Organizador queda liberado de toda responsabilidad respecto del mismo. ")]), e._m(5), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("12.- Difusión del nombre e imagen del Ganador: El Organizador se reserva el derecho de difundir el nombre e imágenes del Ganador por los medios y formas de comunicación que crea conveniente, incluyendo fines publicitarios y de contenido, durante todo el tiempo que considere necesario y sin obligación de realizar compensación alguna. El nombre e imagen del Ganador podrán ser publicados por el Organizador en la página de Internet del Organizador o donde el Organizador considere conveniente. ")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("13.- Pago de Impuestos: Estará a cargo del Ganador el pago de todo impuesto (actual o futuro) que deba tributarse sobre o en relación con el Premio a los cuales se hizo acreedor y toda suma de dinero que deba abonarse por cualquier concepto al Estado Nacional, sociedades del estado, provincias y/o municipalidades con motivo de la organización del Juego y/o del ofrecimiento y/o entrega del Premio y sus importes podrán ser requeridos por el Organizador como condición para la entrega del Premio.")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("14.- Prohibición de participación: El personal del Organizador no podrá ser acreedor del Premio, ni de ninguna de las sociedades y/o empresas vinculadas con ésta. ")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("15.- Modificaciones en el Juego: El Organizador podrá, a su solo criterio modificar la duración del Juego, introducir modificaciones a cualquiera de los puntos enunciadas dando, en su caso, la debida comunicación y publicidad y llevando a cabo de corresponder, los procedimientos legales necesarios. El Organizador podrá cancelar, suspender o modificar total o parcialmente el Juego y las presentes Bases cuando se presenten situaciones no imputables al Organizador, sin que ello genere derecho a compensación alguna a favor de los participantes. El Organizador será el único que tendrá facultad de decisión respecto de toda situación no prevista en estas Bases y las resoluciones que adopte al respecto serán definitivas e inapelables. La mera participación en el Juego implica la total e irrestricta aceptación y conocimiento de estas Bases, así como de las decisiones que posteriormente pueda adoptar el Organizador en relación a cualquier punto o cuestión no prevista en las mismas.")]), a("p", {
-                staticClass: "reglas-texto"
-            })])])
+            return 
         }
           , f = [function() {
             var e = this
@@ -504,13 +439,13 @@
                 attrs: {
                     type: "a"
                 }
-            }, [a("li", [e._v("Sean mayores de 18 años.")]), a("li", [e._v("Se registren en "), a("a", {
+            }, [a("li", [e._v("")]), a("li", [e._v(""), a("a", {
                 attrs: {
-                    href: "https://www.lanacion.com.ar",
-                    title: "LA NACION",
+                    href: "",
+                    title: "",
                     target: "_blank"
                 }
-            }, [e._v("https://www.lanacion.com.ar")])]), a("li", [e._v("Acepten recibir newsletters de LN Deportes, del Mundial y comunicaciones comerciales")]), a("li", [e._v("Completen los pronósticos deportivos que consideren para cada uno de los partidos que se jueguen del Mundial.")])])
+            }, [e._v("")])]), a("li", [e._v("Acepten recibir newsletters de LN Deportes, del Mundial y comunicaciones comerciales")]), a("li", [e._v("Completen los pronósticos deportivos que consideren para cada uno de los partidos que se jueguen del Mundial.")])])
         }
         , function() {
             var e = this
@@ -518,31 +453,7 @@
               , a = e._self._c || t;
             return a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("4.- Modalidad de Participación: Los Participantes deberán registrarse en "), a("a", {
-                attrs: {
-                    href: "https://www.lanacion.com.ar",
-                    title: "LA NACION",
-                    target: "_blank"
-                }
-            }, [e._v("https://www.lanacion.com.ar")]), e._v(" y completar los pronósticos deportivos que consideren para cada uno de los partidos que se jueguen del Mundial. Quien obtenga la mayor puntuación – conforme el sistema de puntuación detallado en el punto siguiente - será potencial ganador del premio (en adelante, el “Potencial Ganador”). El Organizador se pondrá en contacto con el Potencial Ganador mediante correo electrónico y éste deberá contestar una pregunta de cultura general de mundiales para ser acreedor del premio (en adelante, el “Ganador”)."), a("br"), e._v(" En el supuesto caso que hubiera más de un “Potencial Ganador”, es decir, que más de un Participante obtuviera el mayor puntaje, se procederá a hacer un sorteo entre los mismos, mediante sistema de ganadores aleatorio, Random, en la semana siguiente al término del Mundial, en las oficinas sitas en la Avenida del Libertador 101, Piso 2°, Vicente López, Provincia de Buenos Aires y luego de seleccionado 1 Potencial Ganador, el Organizador procederá de la misma manera detallada en el párrafo precedente. "), a("br"), e._v(" El Organizador seleccionará un Potencial Ganador entre dos grupos de Participantes. Por un lado, entre todos los usuarios registrados para el Juego. Por el otro, seleccionará a un Potencial Ganador entre los suscriptores con acceso digital a wwww.lanacion.com, que hubieran participado del Juego. "), a("br"), e._v(" Por ello, hay un Premio para el usuario que obtenga el primer lugar en la tabla general, de la que participan todos los inscriptos en el juego. Y, por su parte, hay un Premio especial para quien lidere la tabla de suscriptores, de la que participan únicamente usuarios con acceso digital a "), a("a", {
-                attrs: {
-                    href: "https://www.lanacion.com.ar",
-                    title: "LA NACION",
-                    target: "_blank"
-                }
-            }, [e._v("https://www.lanacion.com.ar")]), a("br"), e._v(" -Si el Potencial Ganador de la tabla general fuera un suscriptor, ese será el ganador del premio general, mientras que el premio especial para suscriptores quedará para el segundo de la tabla específica de suscriptores con acceso digital a "), a("a", {
-                attrs: {
-                    href: "https://www.lanacion.com.ar",
-                    title: "LA NACION",
-                    target: "_blank"
-                }
-            }, [e._v("https://www.lanacion.com.ar")]), e._v("."), a("br"), e._v(" - Ningún usuario podrá obtener más de un de Premio. "), a("br"), e._v(" -Se considera suscriptor válido para el Premio, aquellos que sean suscriptores digitales de "), a("a", {
-                attrs: {
-                    href: "https://www.lanacion.com.ar",
-                    title: "LA NACION",
-                    target: "_blank"
-                }
-            }, [e._v("https://www.lanacion.com.ar")]), e._v(" antes de la fecha de inicio del Mundial ")])
+            }, [])
         }
         , function() {
             var e = this
@@ -550,7 +461,7 @@
               , a = e._self._c || t;
             return a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("5.- Mecánica del Juego y Sistema de Puntuación: "), a("br"), e._v(" El sistema de puntuación del Juego varía de acuerdo a las fases del Mundial, conforme el siguiente detalle y premisas: "), a("br"), e._v(" (i) En fase de grupos: "), a("br"), e._v(" - Si el Participante acierta el resultado del partido, obtendrá 1 punto. "), a("br"), e._v(" - Si, además de acertar el resultado del partido, el Participante acierta los goles del partido, obtendrán 3 puntos adicionales. "), a("br"), a("br"), e._v(" (ii) A partir de octavos de final: "), a("br"), a("br"), e._v(" - Si el Participante acierta el resultado del partido en juego, obtendrá 1 punto. En caso de que el partido dure 120 minutos (alargue), el resultado válido es este último. "), a("br"), e._v(" - Si, además de acertar el resultado del partido, el Participante acierta los goles del partido, obtendrá 3 puntos adicionales. "), a("br"), e._v(" - En el caso que el Participante acierte un pronóstico de “empate” y acierta qué selección gana en los penales, el Participante obtendrá 1 punto más. "), a("br"), e._v(" - En el caso de que el Participante acierte un pronóstico de “ganador” durante el partido (no en el momento de los penales) y ese país resultare ganador por penales, se lleva 1 solo punto. "), a("br"), e._v(" - En el caso de que el Participante acierte un pronóstico de ganador por penales (previo pronóstico de empate) y ese país resultare ganador durante el partido de 90 o 120 minutos en caso de alargue, se lleva 1 solo punto. "), a("br"), e._v(" Ejemplo:"), a("br"), e._v(" Si se pronostica que la Argentina gana en los 90 minutos, o en los 120 minutos si hubiera alargue, pero en realidad gana por penales, el Participante solo sumará 1 punto, ya que no se acertó ni el resultado de los 90 minutos ni los goles, pero sí se acertó qué selección pasó a la siguiente ronda."), a("br"), e._v(" El Participante podrá ingresar a la plataforma del Juego para completar los pronósticos de los partidos del Mundial hasta 15 minutos antes de que inicie el partido, momento en el cual no podrá realizar ningún cambio en su pronóstico. "), a("br")])
+            }, [])
         }
         , function() {
             var e = this
@@ -558,7 +469,7 @@
               , a = e._self._c || t;
             return a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v(' Premio: El premio (en adelante, el “Premio”) consiste en (i) un Smart TV LED 65" Samsung 65AU7000 4K que será adjudicado a quien resulte Ganador entre todos los Participantes del Juego y (ii) un Smart TV LED 65" Samsung 65AU7000 4K que será adjudicado al Ganador seleccionado entre los Participantes que sean suscriptores de Club La Nación y participen del Juego durante el plazo de vigencia del mismo.'), a("br"), e._v(" Se deja constancia de que el Premio no incluye ninguna otra prestación, bien o servicio no enumerados en las presentes Bases. En ningún supuesto se cambiará total o parcialmente el Premio por dinero en efectivo, ni bienes ni servicios de ningún tipo. Todos los costos que se deriven de la obtención del Premio, así como todo impuesto, trámite, gasto y/o tributo que deba actualmente abonarse o que se imponga en el futuro sobre los servicios ofrecidos como Premio en el presente Juego, así como los gastos en que incurra cada Ganador como consecuencia de la obtención y entrega del mismo incluyendo, sin limitación, aquellos gastos de traslado y estadía, en que incurra el Ganador para coordinar los trámites necesarios para la entrega del Premio se encontrarán a exclusivo cargo, costo y responsabilidad del Ganador. "), a("br")])
+            }, [])
         }
         , function() {
             var e = this
@@ -566,7 +477,7 @@
               , a = e._self._c || t;
             return a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("7.- Adjudicación del Premio: El Organizador se pondrá en contacto con el Potencial Ganador mediante correo electrónico en la semana siguiente al término del Mundial. El Potencial Ganador deberá contestar el mensaje del Organizador y deberá proveer al Organizador un número de teléfono para ponerse en contacto. El Organizador se comunicará con el Potencial Ganador al teléfono que éste proporcionó y deberá contestar en el momento una pregunta de cultura general de mundiales que le formulará el Organizador. "), a("br"), e._v(" Si el Potencial Ganador no cumple con alguno de los requisitos establecidos en las presentes Bases o no contestara correctamente la pregunta de cultura general de mundiales referida, perderá la posibilidad de obtener el Premio y se seguirá el mismo procedimiento con los otros Participantes que hayan obtenido el mayor puntaje. El Ganador del Juego podrá retirar su Premio en el día coordinado con el Organizador dentro de los 15 días luego de la finalización del Mundial, en Av. Del Libertador 101, Vicente López, Provincia de Buenos Aires o cualquier otro día indicado oportunamente por el Organizador. Para retirar el Premio deberá presentarse con DNI que acredite la titularidad. En caso de que el Ganador del Premio del Juego no se presente el día y en el lugar indicado por el Organizador, perderá el derecho a acceder al Premio, quedando el mismo en poder del Organizador. ")])
+            }, [e._v("")])
         }
         , function() {
             var e = this
@@ -574,7 +485,7 @@
               , a = e._self._c || t;
             return a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("11.- El Organizador no será responsable: (i) por ningún daño o perjuicio, de cualquier tipo que fuere, que pudiere sufrir el Ganador, sus acompañantes o terceros, sobre sus personas o bienes, con motivo de o en relación a su participación en el presente Juego o por el uso del Premio obtenido, declinando todo tipo de responsabilidad contractual y/o extracontractual frente al Ganador, terceros y/o acompañantes y/o sus sucesores, lo que es aceptado incondicionalmente por cada Participante; (ii) no otorga garantía de calidad ni ninguna otra en relación al Premio que se ofrece, debiendo dirigirse cualquier reclamo a los proveedores o prestadores, fabricantes / importadores de los mismos. Asimismo, la responsabilidad del Organizador finaliza al entregar el Premio al Ganador. En caso de que el Premio no pueda efectivizarse por el Ganador o el Juego suspenderse temporaria o definitivamente, por causas o motivos de fuerza mayor o caso fortuito, o motivos ajenos al Organizador, este no tendrá responsabilidad alguna frente al Ganador; (iii) el Organizador no será responsable de los daños y perjuicios que pudiera sufrir el Ganador o terceros, en sus personas y/o bienes, con motivo o en ocasión de la utilización del Premio; (iv) el Organizador no se responsabiliza tampoco por los daños, hurtos y/o robos de los que pudiera ser objeto el Ganador y/o terceros; (v) el Organizador no asume responsabilidad alguna si por serle imposible concretar, por cualquier causa, la notificación al Ganador del Juego, no pudiera adjudicarle el Premio. "), a("br"), e._v(" El Ganador mantendrá indemne y a salvo al Organizador y a sus compañías vinculadas, como así también a los auspiciantes del Juego, a sus agencias o afiliadas por cualquier daño, pérdida y/o accidente acaecido como consecuencia de la utilización del Premio. ")])
+            }, [e._v("")])
         }
         ]
           , _ = {
@@ -3662,5 +3573,27 @@ function addlistener(){
 }
 
 addlistener()
+
+
+
+btnguardado='<div class="guardar"><button id="btnGuardar" class="active"> Guardar pronóstico </button></div>'
+nuevo_div=document.createElement('div')
+nuevo_div.innerHTML=btnguardado
+div=document.getElementsByClassName('partidos-container')[0]
+div.append(nuevo_div)
+
+
+function sendProde(){
+    inputs=document.getElementsByTagName('input')
+    for (let input of inputs) {
+        console.log(input.value)
+    }
+}
+
+btnGuardar.addEventListener('click', sendProde)
+
+
+
+
 ;
 //# sourceMappingURL=app~d0ae3f07.e5b3f71a.js.map
