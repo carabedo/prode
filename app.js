@@ -3686,6 +3686,5 @@ function postAPI(preds,id){
     .catch(error => console.log('error', error));
 }
 
-document.querySelector('#appContainer').contentEditable=true
 ;
 
