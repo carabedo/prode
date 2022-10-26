@@ -1668,22 +1668,6 @@
     }
 ]
    
-
-grupo=document.getElementsByClassName('nombre-grupo')[0]
-
-function selectGroup(grupo){
-    return fixture.filter(item => item.group == grupo)
-}
-
-
-function getGrupo(){
-    botonActivo=document.getElementsByClassName('router-link-exact-active active')[1]
-    return botonActivo.innerText
-}
-
-menugrupos=document.getElementById('menu-grupos')
-menugrupos.addEventListener('click', ()=> console.log(getGrupo()))
-
 </script>
 </body>
 

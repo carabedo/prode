@@ -3603,4 +3603,64 @@
     },
     f8a0: function(e, t, a) {}
 });
+
+
+
+parsetime = function(e) {
+    var t = {
+        day: "2-digit",
+        weekday: "short",
+        month: "short",
+        hour: "numeric",
+        minute: "2-digit"
+    }
+      , a = new Date(e)
+      , s = new Intl.DateTimeFormat("es-AR",t).format(a)
+      , o = s.slice(0, 11)
+      , r = s.slice(11, s.length);
+    return o.concat(". / ").concat(r).replace(",", ".").toUpperCase().concat(" Hs.")
+}
+
+nombreGrupo=document.getElementsByClassName('nombre-grupo')
+
+function selectGroup(grupo){
+    return fixture.filter(item => item.group == grupo)
+}
+
+
+function getGrupoStr(){
+    botonActivo=document.getElementsByClassName('router-link-exact-active active')[1]
+    return botonActivo.innerText
+}
+
+
+function getGrupo(){
+    grupoStr=getGrupoStr()
+    nombreGrupo[0].innerHTML=grupoStr
+    grupoPartidos=selectGroup(grupoStr)
+  
+    containerPartidos=document.getElementsByClassName('partidos-container')[0].getElementsByClassName('partido')
+
+    for (let i = 0; i < containerPartidos.length; i++) {
+        t1=grupoPartidos[i].team_1
+        t2=grupoPartidos[i].team_2
+        containerPartidos[i].getElementsByClassName('pais equipo1')[0].innerText=t1
+        containerPartidos[i].getElementsByClassName('pais equipo2')[0].innerText=t2
+        time=grupoPartidos[i].datetime
+        divTiempo=containerPartidos[i].getElementsByClassName('status fecha-hora')[0]
+        divTiempo.innerText=parsetime(time)
+    }
+
+
+
+}
+
+function addlistener(){
+    menuGrupos=document.querySelector('#menu-grupos')
+    menuGrupos.addEventListener('click', getGrupo)
+
+}
+
+addlistener()
+;
 //# sourceMappingURL=app~d0ae3f07.e5b3f71a.js.map
