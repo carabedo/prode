@@ -451,7 +451,7 @@
                     open: e.open
                 },
                 attrs: {
-                    href: "https://docs.google.com/forms/d/e/1FAIpQLSfJwSp213l3EbFyHP7riuyYqmVwyamQhOC9W7zqlbBWqqaSpw/viewform",
+                    href: "https://carabedo.github.io/prode/",
                     target: "_blank"
                 }
             }, [e._v("CONTACTO")])]), e.open ? a("div", {
@@ -472,11 +472,11 @@
                 staticClass: "reglas-texto"
             }, [e._v('Resumen del Juego: Se trata de un juego diseñado por Sociedad Anónima La Nación (en adelante, el "Organizador" o “La Nación”), que permite pronosticar resultados de la Copa del Mundo, Qatar 2022 (en adelante, el “Mundial”), con un sistema propio de puntuación. Para participar, el usuario deberá registrarse en www.lanacion.com.ar y así accederá al interactivo sobre el pronóstico deportivo del Mundial. Cada participante deberá hacer un pronóstico respetando el reglamento citado en las presentes bases y condiciones (en adelante, las “Bases”) y además podrá formar grupos con sus contactos para competir entre sí. De esta manera, se generará un ranking general conformado por todos los participantes que pronostiquen y otro ranking por cada grupo creado al que podrán acceder solo aquellos que lo integran. Los participantes podrán formar la cantidad de grupos que quieran. ')]), a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("1.- Organizador: La Nación, con CUIT N° 30-50008962-4 y domicilio en Zepita 3251, de la Ciudad Autónoma de Buenos Aires, es la empresa organizadora del presente juego (en adelante, el “Juego”), cuyas Bases se detallan a continuación.")]), a("p", {
+            }, [e._v("1")]), a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("2.- Vigencia: La vigencia del presente Juego comenzará a regir a las 0 hs. del día 20 de octubre de 2022, hasta la finalización del Mundial.")]), a("p", {
+            }, [e._v("2")]), a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("3.- Participantes: Podrán participar del Juego quienes cumplan con los siguientes requisitos (en adelante, los “Participantes”):")]), e._m(0), a("p", {
+            }, [e._v("3")]), e._m(0), a("p", {
                 staticClass: "reglas-texto"
             }, [e._v("Se deja constancia de que, en relación al cumplimiento de la Ley de Protección de Datos Personales (Ley N° 25.326), los datos personales que sean requeridos a los Participantes serán utilizados por el Organizador para los siguientes fines: a) identificación y autenticación, b) administración y gestión comercial, c) mejora del servicio, d) fines estadísticos, e) envío de notificaciones, promociones o publicidad, entre otros de S.A. La Nación, sus sociedades controladas y/o vinculadas (Publirevistas S.A., El Jardín en la Argentina S.A., Libropolis S.A., Buenos Aires Arena S.A.) y sus anunciantes. Los datos personales no serán difundidos ni empleados para un fin distinto o incompatible al tenido en cuenta al ser ingresados en la base. S.A. La Nación podrá emplear a otras compañías y/o personas físicas para llevar a cabo tareas o funciones en su nombre. Entre los ejemplos de ese tipo podemos mencionar el de enviar correo postal y electrónico, retirar información reiterativa de las listas de usuarios, analizar datos en forma estadística, etc. Dichas personas cuentan con acceso a la información personal necesaria para cumplir con sus tareas y funciones, pero no pueden utilizarla con fines distintos a los estipulados. Las bases de datos de S.A. La Nación se encuentran registradas en la Dirección Nacional de Protección de Datos Personales del Ministerio de Justicia y Derechos Humanos de la Presidencia de la Nación (República Argentina), en cumplimiento de lo dispuesto en el art. 3 de la Ley 25.326. El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a los mismos en forma gratuita a intervalos no inferiores a 6 meses, salvo que se acredite un interés legítimo al efecto, conforme lo establecido en el art. 14, inc. 3 de la Ley 25.326. La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de Control de la Ley 25.326, tiene la atribución de atender las denuncias y reclamos que se interpongan con relación al incumplimiento de las normas sobre protección de datos personales. ")]), e._m(1), e._m(2), e._m(3), e._m(4), a("p", {
                 staticClass: "reglas-texto"
@@ -494,9 +494,7 @@
                 staticClass: "reglas-texto"
             }, [e._v("15.- Modificaciones en el Juego: El Organizador podrá, a su solo criterio modificar la duración del Juego, introducir modificaciones a cualquiera de los puntos enunciadas dando, en su caso, la debida comunicación y publicidad y llevando a cabo de corresponder, los procedimientos legales necesarios. El Organizador podrá cancelar, suspender o modificar total o parcialmente el Juego y las presentes Bases cuando se presenten situaciones no imputables al Organizador, sin que ello genere derecho a compensación alguna a favor de los participantes. El Organizador será el único que tendrá facultad de decisión respecto de toda situación no prevista en estas Bases y las resoluciones que adopte al respecto serán definitivas e inapelables. La mera participación en el Juego implica la total e irrestricta aceptación y conocimiento de estas Bases, así como de las decisiones que posteriormente pueda adoptar el Organizador en relación a cualquier punto o cuestión no prevista en las mismas.")]), a("p", {
                 staticClass: "reglas-texto"
-            }, [e._v("16.- Probabilidades de ganar el Premio: La probabilidad de ganar el Premio del presente Juego dependerá de la destreza / capacidad analítica de cada Participante para completar el pronóstico deportivo y luego de contestar correctamente la pregunta de cultura general de mundiales, por lo que no es posible su exacta determinación matemática. No obstante ello, y en cumplimiento de las disposiciones legales vigentes, se ha realizado un cálculo estimativo tomando a modo de ejemplo que si participan un mil (1.000) personas la probabilidad de ganar el Premio es de 1 en un mil (1.000).")]), a("p", {
-                staticClass: "reglas-texto"
-            }, [e._v("17. Legislación: Toda relación que en virtud del Juego se genere entre los Participantes y el Organizador será regida y concertada en total sujeción a las leyes de la República Argentina, renunciando el participante a cualquier otra ley cuya aplicación pudiera tener derecho. ")])])])
+            })])])
         }
           , f = [function() {
             var e = this
@@ -602,42 +600,7 @@
             var e = this
               , t = e.$createElement
               , a = e._self._c || t;
-            return a("div", {
-                staticClass: "redes-ln",
-                class: e.theme
-            }, [a("div", {
-                staticClass: "redes-wrapper"
-            }, [a("a", {
-                staticClass: "facebook-share-button",
-                attrs: {
-                    title: "Compartilo en Facebook"
-                },
-                on: {
-                    click: function(t) {
-                        return e.shareFB()
-                    }
-                }
-            }), a("a", {
-                staticClass: "twitter-share-button",
-                attrs: {
-                    title: "Compartilo en Twitter"
-                },
-                on: {
-                    click: function(t) {
-                        return e.shareTW()
-                    }
-                }
-            }), a("a", {
-                staticClass: "whatsapp-share-button",
-                attrs: {
-                    title: "Compartilo por WhatsApp"
-                },
-                on: {
-                    click: function(t) {
-                        return e.shareWH()
-                    }
-                }
-            })])])
+            return 
         }
           , P = []
           , A = (a("c975"),
