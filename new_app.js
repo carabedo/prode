@@ -80,6 +80,8 @@ addlistener()
 
 
 
+
+
 btnguardado='<div class="guardar"><button id="btnGuardar" class="active"> Guardar pronóstico </button></div>'
 nuevo_div=document.createElement('div')
 nuevo_div.innerHTML=btnguardado
