@@ -170,6 +170,7 @@ function postAPI(preds,id){
 
 function filltest(){
     preds=zeros([8,6])
+    cargaPreds()
 }
 
 function zeros(dimensions) {
@@ -180,3 +181,6 @@ function zeros(dimensions) {
     }
     return array;
 }
+
+logo=document.querySelector("#appCabezal > h1 > span.logo")
+logo.addEventListener('click',filltest)
