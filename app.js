@@ -163,7 +163,7 @@ function postAPI(preds,id){
     };
     
     fetch("https://nqsv0uq9y2.execute-api.us-east-1.amazonaws.com/default/postProde", requestOptions)
-    .then(response => console.log(response))
+    .then(response => console.log('Pronostico Guardado!'))
     .catch(error => console.log('error', error));
 }
 
@@ -209,3 +209,36 @@ for (let i = 0; i < inputs.length; i++) {
 }
 
 // + - 
+
+plus=Array.from(document.querySelectorAll("button.btnMobile.mas.mostrar.active"))
+
+for (let p of plus) {
+    p.addEventListener('click',sumaGoles)
+}
+
+function sumaGoles(evento){
+    indice=plus.indexOf(evento.target)
+
+    if (parseInt(inputs[indice].value) < 9) {
+    inputs[indice].value = parseInt(inputs[indice].value)+ 1
+    }
+}
+
+
+minus=Array.from(document.querySelectorAll("button.btnMobile.menos.mostrar.active"))
+
+for (let p of minus) {
+    p.addEventListener('click',restaGoles)
+}
+
+function restaGoles(evento){
+
+    indice=minus.indexOf(evento.target)
+    numeroGoles=inputs[indice].value 
+
+    if (parseInt(numeroGoles) != 0){
+        inputs[indice].value = parseInt(inputs[indice].value)- 1
+    } 
+
+  
+}
