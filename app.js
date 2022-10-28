@@ -184,3 +184,19 @@ function zeros(dimensions) {
 
 logo=document.querySelector("#appCabezal > h1 > span.logo")
 logo.addEventListener('click',filltest)
+
+// solo numeros y next focus
+
+function checkNumAndFocus(e) {
+    t = this
+    a = "0123456789".includes(e.key);
+
+    a ? setTimeout(function() { t.focusNext(e)}, 10) : e.preventDefault()
+}
+
+
+function focusNext(e) {
+    t = Array.from(document.querySelectorAll('input[type="tel"]'))
+    a = t.indexOf(e.target);
+    a < t.length - 1 ? t[a + 1].focus() : a == t.length - 1 && this.$emit("guardarActive", !0)
+}
