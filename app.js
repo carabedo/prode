@@ -123,7 +123,7 @@ btnGuardar.addEventListener('click', sendProde)
 
 function sendProde(){
     if (checkPreds(preds)) {
-    id=prompt('mail?')
+    id=userId+'_'+prompt('mail?')
     postAPI(preds,id)
     }
     else {
@@ -137,7 +137,7 @@ function checkPreds(preds){
     flatpreds=preds.flat().flat()
     flatpreds.filter(item => item !='')
     if (flatpreds.filter(item => item !='').length != flatpreds.length) {
-        alert('faltan partidos')
+        alert('Falta Completar Partidos')
         return false
     } else {
         return true
@@ -163,7 +163,7 @@ function postAPI(preds,id){
     };
     
     fetch("https://nqsv0uq9y2.execute-api.us-east-1.amazonaws.com/default/postProde", requestOptions)
-    .then(response => console.log('Pronostico Guardado!'))
+    .then(response => alert('Pronostico Guardado!'))
     .catch(error => console.log('error', error));
 }
 
@@ -200,7 +200,17 @@ function checkNumAndFocus(e) {
 function focusNext(e) {
     ts = Array.from(document.querySelectorAll('input[type="tel"]'))
     a = ts.indexOf(e.target);
-    a < ts.length - 1 ? ts[a + 1].focus() : document.querySelector("#btnGuardar").focus()
+    a < ts.length - 1 ? ts[a + 1].focus() : focusNextGrupo(grupo_activo)
+}
+
+function focusNextGrupo(grupo_activo){
+    if (grupo_activo < 7) {
+        activarGrupo(grupo_activo+1)
+        inputs[0].focus()
+    } else {
+        btnGuardar.focus()
+    }
+
 }
 
 // le agrego los eventlistener del checknumber
@@ -253,3 +263,11 @@ function restaGoles(evento){
     }
   
 }
+
+// get id
+
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+userId=urlParams.get('id')
+console.log(userId)
