@@ -163,10 +163,11 @@ function postAPI(preds,id){
     };
     
     fetch("https://nqsv0uq9y2.execute-api.us-east-1.amazonaws.com/default/postProde", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
+    .then(response => console.log(response))
     .catch(error => console.log('error', error));
 }
+
+// relleno de 0 para testeo
 
 function filltest(){
     preds=zeros([8,6])
@@ -188,15 +189,23 @@ logo.addEventListener('click',filltest)
 // solo numeros y next focus
 
 function checkNumAndFocus(e) {
-    t = this
+    target = this
     a = "0123456789".includes(e.key);
-
-    a ? setTimeout(function() { t.focusNext(e)}, 10) : e.preventDefault()
+    a ? setTimeout(()=>focusNext(e), 100) : e.preventDefault()
 }
 
 
 function focusNext(e) {
-    t = Array.from(document.querySelectorAll('input[type="tel"]'))
-    a = t.indexOf(e.target);
-    a < t.length - 1 ? t[a + 1].focus() : a == t.length - 1 && this.$emit("guardarActive", !0)
+    ts = Array.from(document.querySelectorAll('input[type="tel"]'))
+    a = ts.indexOf(e.target);
+    a < ts.length - 1 ? ts[a + 1].focus() : document.querySelector("#btnGuardar").focus()
 }
+
+// le agrego los eventlistener del checknumber
+
+for (let i = 0; i < inputs.length; i++) {
+    input=inputs[i]
+    input.addEventListener('keydown',checkNumAndFocus)
+}
+
+// + - 
