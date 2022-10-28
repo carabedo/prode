@@ -186,6 +186,8 @@ function zeros(dimensions) {
 logo=document.querySelector("#appCabezal > h1 > span.logo")
 logo.addEventListener('click',filltest)
 
+logomobile=document.querySelector(".logo-mobile")
+logomobile.addEventListener('click',filltest)
 // solo numeros y next focus
 
 function checkNumAndFocus(e) {
@@ -218,10 +220,16 @@ for (let p of plus) {
 
 function sumaGoles(evento){
     indice=plus.indexOf(evento.target)
+    numeroGoles=inputs[indice].value 
+    if (numeroGoles=='') {
+        inputs[indice].value = 0
 
+    }
+    else {
     if (parseInt(inputs[indice].value) < 9) {
     inputs[indice].value = parseInt(inputs[indice].value)+ 1
     }
+}
 }
 
 
@@ -235,10 +243,13 @@ function restaGoles(evento){
 
     indice=minus.indexOf(evento.target)
     numeroGoles=inputs[indice].value 
-
-    if (parseInt(numeroGoles) != 0){
-        inputs[indice].value = parseInt(inputs[indice].value)- 1
-    } 
-
+    if (numeroGoles=='') {
+        inputs[indice].value = 0
+    }
+    else {
+        if (parseInt(numeroGoles) != 0){
+            inputs[indice].value = parseInt(inputs[indice].value)- 1
+        } 
+    }
   
 }
