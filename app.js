@@ -124,7 +124,7 @@ btnGuardar.addEventListener('click', sendProde)
 function sendProde(){
     if (checkPreds(preds)) {
     id=userId+'_'+prompt('mail?')
-    postAPI(preds,id)
+    postAPI(preds,id,userName)
     }
     else {
     console.log('')
@@ -145,12 +145,13 @@ function checkPreds(preds){
 }
 
 
-function postAPI(preds,id){
+function postAPI(preds,id,name){
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     
     var raw = JSON.stringify({
         id: id ,
+        name : name,
         preds : preds.flat().flat()
     });
     
@@ -240,6 +241,7 @@ function sumaGoles(evento){
     inputs[indice].value = parseInt(inputs[indice].value)+ 1
     }
 }
+guardaPred(indice)
 }
 
 
@@ -261,7 +263,8 @@ function restaGoles(evento){
             inputs[indice].value = parseInt(inputs[indice].value)- 1
         } 
     }
-  
+    guardaPred(indice)
+ 
 }
 
 // get id
@@ -270,4 +273,6 @@ function restaGoles(evento){
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 userId=urlParams.get('id')
+userName=urlParams.get('n')
+
 console.log(userId)
