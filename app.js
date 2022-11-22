@@ -321,5 +321,7 @@ Res.push(dummi)
 preds = Res
 cargaPreds(grupo_activo)
 }
+guardaBTN=document.querySelector("#btnGuardar")
+guardaBTN.disabled=true
 }
 }
