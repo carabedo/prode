@@ -276,3 +276,50 @@ userId=urlParams.get('id')
 userName=urlParams.get('n')
 
 console.log(userId)
+
+
+// get Resultados
+
+resName=urlParams.get('user')
+console.log(resName)
+let data 
+let preds2
+
+if (resName) {
+
+console.log('fetch')
+
+
+var raw = JSON.stringify({
+  "name": resName
+});
+
+var requestOptions = {
+  method: 'POST',
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://twekv6rsjueiprmp5sbwjcdiwy0nedzi.lambda-url.us-east-1.on.aws", requestOptions)
+  .then(response => response.text())
+  .then(result => data = parseFetch(result))
+  .catch(error => console.log('error', error));
+
+
+function parseFetch(data) {  
+resultados=JSON.parse(data)
+preds2=resultados['preds']
+let newArr = [];
+while(preds2.length) newArr.push(preds2.splice(0,12));
+
+let Res = []
+
+for (let i =0 ; i< 8; i++) {
+let dummi = []    
+while(newArr[i].length) dummi.push(newArr[i].splice(0,2));
+Res.push(dummi)
+preds = Res
+cargaPreds(grupo_activo)
+}
+}
+}
