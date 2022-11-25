@@ -278,7 +278,7 @@ userName=urlParams.get('n')
 console.log(userId)
 
 
-// get Resultados
+// get Resultados, hay que moverlo a resultados.html
 
 resName=urlParams.get('user')
 console.log(resName)
