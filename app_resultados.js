@@ -67,6 +67,7 @@ function parsetime(datetime) {
     return fecha.concat(". / ").concat(hora).replace(",", ".").toUpperCase().concat(" Hs.")
 }
 
+inputs=document.getElementsByTagName('input')
 
 
 function cargaPreds(){
@@ -136,15 +137,13 @@ Res.push(dummi)
 preds = Res
 cargaPreds(grupo_activo)
 }
-guardaBTN=document.querySelector("#btnGuardar")
-guardaBTN.disabled=true
+
 }
 }
 
 // update fixture
 // para los iunputs que YA SE JUGARON class="full-group completed-match blocked"
 // para los inputs que no se jugaron class="full-group completed-match"
-
 
 // si el partido se jugo insertar este html:
 
